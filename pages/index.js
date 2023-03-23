@@ -22,7 +22,7 @@ export default function Home({homeData, projectsData}) {
         </div>
         <div>
           {projectsData.map((project, index) => {
-            return <p>{project.attributes.title}</p>
+            return <p key={`p-${index}`}>{project.attributes.title}</p>
           })}
         </div>
       </main>
