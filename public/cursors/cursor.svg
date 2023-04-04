@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="42"
+   height="42"
+   fill-rule="evenodd"
+   clip-rule="evenodd"
+   version="1.1"
+   id="svg20"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs24" />
+  <path
+     d="M 20.086955,20.086955 V 0 h 1.826086 V 20.086955 H 42 v 1.826086 H 21.913041 V 42 H 20.086955 V 21.913041 H 0 v -1.826086 z"
+     id="path18"
+     style="stroke-width:1.09095;stroke-dasharray:none" />
+</svg>
