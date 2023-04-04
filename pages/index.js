@@ -6,7 +6,7 @@ import { useState, useEffect, useRef } from "react";
 import { fetchAPI } from "../lib/api";
 import { markdownToHTML } from "../lib/markdown";
 const qs = require("qs");
-// import ReactFullpage from '@fullpage/react-fullpage';
+import ReactFullpage from '@fullpage/react-fullpage';
 
 import Header from "../components/Header";
 import Project from "../components/Project";
@@ -87,8 +87,7 @@ export default function Home({ homeData, projectsData }) {
 
   const renderPage = () => {
     return (
-        // <ReactFullpage.Wrapper>
-        <>
+        <ReactFullpage.Wrapper>
           <section
             className="homepage section"
             style={{ backgroundImage: `url(${backgroundImage})` }}
@@ -104,8 +103,7 @@ export default function Home({ homeData, projectsData }) {
           {projectsData.map((project, index) => {
             return <Project project={project} key={`prj-${index}`}></Project>
           })}
-        </>
-        // </ReactFullpage.Wrapper>
+        </ReactFullpage.Wrapper>
     )
   }
 
@@ -119,15 +117,14 @@ export default function Home({ homeData, projectsData }) {
           content={pageInfos.description}
         />
       </Head>
-      {/* <ReactFullpage
+      <ReactFullpage
         verticalCentered={false}
         slidesNavigation={false}
         credits={false}
         render={renderPage}
         onLeave={updatePageInfo}
       >
-      </ReactFullpage> */}
-      {renderPage()}
+      </ReactFullpage>
     </>
   );
 }
